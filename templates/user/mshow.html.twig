@@ -1,0 +1,447 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+    <main style="margin-top: 100px">
+        <div class="main-section">
+            <div class="container">
+                <div class="main-section-data">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="main-left-sidebar">
+                                <div class="user_profile">
+                                    <div class="user-pro-img">
+                                        <img src="{{ asset('uploads') }}/{{ user.image }}" alt="" height="200">
+                                    </div><!--user-pro-img end-->
+                                    <div class="user_pro_status">
+                                        {% if (user.id != app.user.id) %}
+                                        {% if (follower) %}
+                                        {{ include('user/unf_form.html.twig') }}
+                                        {% else %}
+                                        <form method="post" action="{{ path('follow_new') }}">
+                                            <input type="hidden" name="follow[userid]" value="{{ app.user.id }}">
+                                            <input type="hidden" name="follow[followid]" value="{{ user.id }}">
+                                            <ul class="flw-hr">
+                                                <li><button type="submit" class="flww"><i class="la la-plus"></i>Follow</button></li>
+                                            </ul>
+                                        </form>
+                                        {% endif %}
+                                        {% endif %}
+
+                                        <ul class="flw-status">
+                                            <li>
+                                                <span>Following</span>
+                                                <b>{{ followd }}</b>
+                                            </li>
+                                            <li>
+                                                <span>Followers</span>
+                                                <b>{{ followc }}</b>
+                                            </li>
+                                        </ul>
+                                    </div><!--user_pro_status end-->
+                                    <ul class="social_links">
+                                        <li><a href="#" title=""><i class="la la-globe"></i> {{ user.website }}</a></li>
+                                        <li><a href="#" title=""><i class="fa fa-google-plus-square"></i> {{ user.email }}</a></li>
+                                    </ul>
+                                </div><!--user_profile end-->
+                                <div class="suggestions full-width">
+                                    <div class="sd-title">
+                                        <h3>Suggestions</h3>
+                                        <i class="la la-ellipsis-v"></i>
+                                    </div><!--sd-title end-->
+                                    <div class="suggestions-list">
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s1.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s2.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s3.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Poonam</h4>
+                                                <span>Wordpress Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s4.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Bill Gates</h4>
+                                                <span>C & C++ Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s5.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>Jessica William</h4>
+                                                <span>Graphic Designer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="suggestion-usd">
+                                            <img src="{{ asset('theme') }}\images\resources\s6.png" alt="">
+                                            <div class="sgt-text">
+                                                <h4>John Doe</h4>
+                                                <span>PHP Developer</span>
+                                            </div>
+                                            <span><i class="la la-plus"></i></span>
+                                        </div>
+                                        <div class="view-more">
+                                            <a href="#" title="">View More</a>
+                                        </div>
+                                    </div><!--suggestions-list end-->
+                                </div><!--suggestions end-->
+                            </div><!--main-left-sidebar end-->
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="main-ws-sec">
+                                <div class="user-tab-sec">
+                                    <h3>{{ user.name }}</h3>
+                                    <div class="star-descp">
+                                        <span>{{ user.school }}</span>
+                                        <ul>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                        </ul>
+                                    </div><!--star-descp end-->
+                                    <div class="tab-feed">
+                                        <ul>
+                                            <li data-tab="feed-dd" class="active">
+                                                <a href="#" title="">
+                                                    <img src="{{ asset('theme') }}\images\ic1.png" alt="">
+                                                    <span>Research</span>
+                                                </a>
+                                            </li>
+                                            <li data-tab="info-dd">
+                                                <a href="#" title="">
+                                                    <img src="{{ asset('theme') }}\images\ic2.png" alt="">
+                                                    <span>Info</span>
+                                                </a>
+                                            </li>
+                                            <li data-tab="portfolio-dd">
+                                                <a href="#" title="">
+                                                    <img src="{{ asset('theme') }}\images\ic3.png" alt="">
+                                                    <span>Yayınlar</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- tab-feed end-->
+                                </div><!--user-tab-sec end-->
+
+                                <div class="product-feed-tab current" id="feed-dd">
+                                    <div class="posts-section">
+                                        {% for rs in research %}
+                                            <div class="post-bar">
+                                                <div class="post_topbar">
+                                                    <div class="usy-dt">
+                                                        <img src="{{ asset('uploads') }}/{{ user.image }}" alt="" height="40">
+                                                        <div class="usy-name">
+                                                            <h3>{{ user.name }}</h3>
+                                                            <span><img src="{{ asset('theme') }}\images\clock.png" alt="">3 dakika önce</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ed-opts">
+                                                        <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                                        <ul class="ed-options">
+                                                            <li><a href="#" title="">Düzenle</a></li>
+                                                            <li><a href="#" title="">Sil</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="epi-sec">
+                                                    <ul class="descp">
+                                                        <li><img src="{{ asset('theme') }}\images\icon9.png" alt=""><span>{{ user.location }}</span></li>
+                                                    </ul>
+                                                    {% if(rs.recommendname) %}
+                                                        <ul class="bk-links">
+                                                            <li><i class="la la-bookmark" style="width: 250px;font-size: 15px;">Recommended by {{ rs.recommendname }}</i></li>
+                                                        </ul>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="job_descp">
+                                                    <div class="job-status-bar">
+                                                        <div style="text-align:center">
+                                                            <iframe src="{{ asset('uploads') }}/{{ rs.upload }}" frameborder="0" height="500px" width="100%"></iframe>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <h3>{{ rs.title }}</h3>
+                                                    <ul class="skill-tags">
+                                                        <li><a href="#" title="">{{ rs.keywords }}</a></li>
+                                                    </ul>
+
+                                                    <ul class="job-dt" style="margin-left: 60%">
+
+                                                        <li><form action="{{ path('research_update', {'id': rs.id}) }}" method="post">
+                                                                <p>{{ rs.view }}</p>
+                                                                <input type="hidden" value="{{ rs.view }}" name="view">
+                                                                <button type="submit">Görüntüle</button></form></li>
+                                                        <li><a href="uploads\{{ rs.upload }}" download>İndir</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="job-status-bar">
+                                                    <ul class="like-com">
+                                                        <li>
+                                                            <a href="#"><i class="la la-heart"></i> Beğen</a>
+                                                            <img src="{{ asset('theme') }}\images\liked-img.png" alt="">
+                                                            <span>25</span>
+                                                        </li>
+                                                        <li><a href="#" title="" class="com"><img src="{{ asset('theme') }}\images\com.png" alt=""> Yorum</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--post-bar end-->
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="product-feed-tab" id="info-dd">
+                                    <div class="user-profile-ov">
+                                        <h3>Info</h3>
+                                        <p>{{ user.info }}</p>
+                                    </div><!--user-profile-ov end-->
+                                    <div class="user-profile-ov st2">
+                                        <h3>Skills</h3>
+                                        <p>{{ user.skills }}</p>
+                                    </div><!--user-profile-ov end-->
+                                    <div class="user-profile-ov">
+                                        <h3>Work Area</h3>
+                                        <p>{{ user.workarea }}</p>
+                                    </div><!--user-profile-ov end-->
+                                    <div class="user-profile-ov">
+                                        <h3>Title and Tasks</h3>
+                                        <p>{{ user.titleandtasks }}</p>
+                                    </div><!--user-profile-ov end-->
+                                    <div class="user-profile-ov">
+                                        <h1 style="font-size: 30px; padding-bottom: 20px">Eğitim</h1>
+                                        <h3>Lisans</h3>
+                                        <p style="padding-bottom: 40px">{{ user.edulis }}</p>
+                                        <h3>Yüksek Lisans</h3>
+                                        <p style="padding-bottom: 40px">{{ user.edumaster }}</p>
+                                        <h3>Doktora</h3>
+                                        <p style="padding-bottom: 40px">{{ user.edudoc }}</p>
+                                    </div><!--user-profile-ov end-->
+                                    <div class="user-profile-ov">
+                                        <h1 style="font-size: 30px; padding-bottom: 20px">Tezler</h1>
+                                        <h3>Yüksek Lisans</h3>
+                                        <p style="padding-bottom: 40px">{{ user.thesismaster }}</p>
+                                        <h3>Doktora</h3>
+                                        <p style="padding-bottom: 40px">{{ user.thesisdoc }}</p>
+                                    </div><!--user-profile-ov end-->
+
+                                </div><!--product-feed-tab end-->
+                                <div class="product-feed-tab" id="portfolio-dd">
+                                    <div class="portfolio-gallery-sec">
+                                        <h3>Yayınlar</h3>
+                                        <div class="gallery_pf">
+                                            <div class="row">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">SCI, SCIE, SSCI Kapsamındaki Uluslararası Hakemli Dergilerde Yayınlanmış Makaleler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==0 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Diğer Uluslararası Hakemli Dergilerde Yayınlanmış Makaleler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==1 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Ulusal Hakemli Dergilerde Yayınlanmış Makaleler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==2 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Uluslararası Bilimsel Toplantılarda Sunulmuş Bildiriler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==3 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                    <thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Ulusal Bilimsel Toplantılarda Sunulmuş Bildiriler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==4 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody><thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Yayın Kurulunda Yer Alınan Dergi ve Konferanslar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==5 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody><thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Hakemlik Yapılan Dergi ve Konferanslar</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==6 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody><thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Ödül ve Destekler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==7 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody><thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Verilen Dersler</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==8 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody><thead>
+                                                    <tr>
+                                                        <th style="font-size: 15px; font-weight: bold">Tez Danışmanlıkları</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for userinfo in userinfos %}
+                                                        {% if (userinfo.categoryid)==9 %}
+                                                            <tr>
+                                                                <td><a href="{{ userinfo.link }}" style="color: black;">{{ userinfo.title }}</a></td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div><!--gallery_pf end-->
+                                    </div><!--portfolio-gallery-sec end-->
+                                </div><!--product-feed-tab end-->
+                            </div><!--main-ws-sec end-->
+                        </div>
+                        <div class="col-lg-3" style="margin-top: 220px;">
+                            <div class="right-sidebar">
+                                <div class="widget widget-portfolio">
+                                    <div class="wd-heady">
+                                        <h3>Affiliation</h3>
+                                    </div>
+                                    <div class="wd-heady">
+                                        <ul>
+                                            <li><h3>{{ user.school }}</h3></li>
+                                            <br>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Location</li>
+                                            <li><h4 style="font-size: 15px">{{ user.location }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Department</li>
+                                            <li><h4 style="font-size: 15px">{{ user.department }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">School</li>
+                                            <li><h4 style="font-size: 15px">{{ user.school }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Phone</li>
+                                            <li><h4 style="font-size: 15px">{{ user.phone }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Fax</li>
+                                            <li><h4 style="font-size: 15px">{{ user.fax }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Room No</li>
+                                            <li><h4 style="font-size: 15px">{{ user.roomno }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Email</li>
+                                            <li><h4 style="font-size: 15px">{{ user.email }}</h4></li>
+                                            <br>
+                                            <li style="color: dimgrey; font-size: 15px; font-weight: bold">Email</li>
+                                            <li><h4 style="font-size: 15px">{{ user.email2 }}</h4></li>
+                                        </ul>
+                                    </div>
+                                </div><!--widget-portfolio end-->
+                            </div><!--right-sidebar end-->
+                        </div>
+                    </div>
+                </div><!-- main-section-data end-->
+            </div>
+        </div>
+    </main>
+
+<!-- <a href="{{ path('user_index') }}">back to list</a>
+
+    <a href="{{ path('user_edit', {'id': user.id}) }}">edit</a>
+
+    {{ include('user/_delete_form.html.twig') }}-->
+{% endblock %}

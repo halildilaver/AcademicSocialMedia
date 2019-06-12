@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Questions{% endblock %}
+
+{% block body %}
+    <h1>Questions</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ question.id }}</td>
+            </tr>
+            <tr>
+                <th>Askname</th>
+                <td>{{ question.askname }}</td>
+            </tr>
+            <tr>
+                <th>Askphoto</th>
+                <td>{{ question.askphoto }}</td>
+            </tr>
+            <tr>
+                <th>Answername</th>
+                <td>{{ question.answername }}</td>
+            </tr>
+            <tr>
+                <th>Answerphoto</th>
+                <td>{{ question.answerphoto }}</td>
+            </tr>
+            <tr>
+                <th>Question</th>
+                <td>{{ question.question }}</td>
+            </tr>
+            <tr>
+                <th>Answer</th>
+                <td><form action="{{ path('questions_update', {'id': question.id}) }}" method="post">
+                        <input type="hidden" value="{{ app.user.name }}" name="answername">
+                        <input type="hidden" value="{{ app.user.image }}" name="answerphoto">
+                <textarea name="answer">{{ question.answer }}</textarea>
+
+                <input type="submit" value="Güncelle">
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ question.status }}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <a href="{{ path('questions_index') }}">back to list</a>
+
+    <a href="{{ path('questions_edit', {'id': question.id}) }}">edit</a>
+
+    {{ include('questions/_delete_form.html.twig') }}
+{% endblock %}

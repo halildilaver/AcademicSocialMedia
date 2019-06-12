@@ -1,0 +1,38 @@
+
+<div class="post-project">
+    <h3>New Research</h3>
+    <div class="post-project-fields">
+        <form method="post">
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="text" name="research[title]" placeholder="Title">
+                </div>
+                <div class="col-lg-12">
+                    <input type="text" name="research[description]" placeholder="Description">
+                </div>
+                <div class="col-lg-12">
+                    <input type="text" name="research[keywords]" placeholder="Keywords">
+                </div>
+                <div class="col-lg-12">
+                    <textarea name="research[abstract]" placeholder="Abstract"></textarea>
+                </div>
+                <div class="col-lg-6">
+                    <input type="hidden" name="research[userid]" value="{{ app.user.id }}" placeholder="User ID">
+                    <input type="hidden" name="research[username]" value="{{ app.user.name }}" placeholder="User ID">
+                    <input type="hidden" name="research[userlocation]" value="{{ app.user.location }}" placeholder="User ID">
+                    <input type="hidden" name="research[userimage]" value="{{ app.user.image }}" placeholder="User ID">
+                </div>
+                <input type="hidden" name="research[upload]" value="Empty">
+                <div class="col-lg-12">
+                    <ul>
+                        <li><button class="active" type="submit" value="post">Post</button></li>
+                        <li><a href="/" title="">Cancel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div><!--post-project-fields end-->
+    <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+</div><!--post-project end-->
+
+

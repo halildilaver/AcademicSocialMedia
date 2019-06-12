@@ -1,0 +1,768 @@
+Uri: http://gambolthemes.net/workwise_demo/HTML/user-profile.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\user-profile.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/animate.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\animate.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/bootstrap.min.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/line-awesome.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\line-awesome.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/line-awesome-font-awesome.min.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\line-awesome-font-awesome.min.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/font-awesome.min.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/slick.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\slick.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/slick-theme.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\slick-theme.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/style.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\style.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/responsive.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\responsive.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/index.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\index.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/logo.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\logo.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/companies.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\companies.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/projects.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\projects.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/profiles.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\profiles.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/my-profile-feed.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\my-profile-feed.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/jobs.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\jobs.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/ny-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\ny-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/messages.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\messages.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/ny-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\ny-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/ny-img3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\ny-img3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon7.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon7.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/profile-account-setting.html
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\profile-account-setting.htm
+Content Type: text/html
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cover-img.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cover-img.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user-pro-img.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user-pro-img.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/s6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\s6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/us-pic.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\us-pic.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/clock.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\clock.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon8.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon8.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/icon9.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\icon9.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/liked-img.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\liked-img.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/com.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\com.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/us-pc2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\us-pc2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/process-icon.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\process-icon.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img1.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img1.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/all-out.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\all-out.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img2.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img2.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img3.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img3.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img4.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img4.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img5.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img5.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img6.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img6.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img7.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img7.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img8.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img8.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img9.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img9.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-img10.jpg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-img10.jpg
+Content Type: image/jpeg
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/photo-icon.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\photo-icon.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery7.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery7.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery8.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery8.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery9.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery9.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery10.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery10.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery11.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery11.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-gallery12.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-gallery12.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/copy-icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\copy-icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/logo2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\logo2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/np.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\np.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/jquery.min.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/popper.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\popper.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/bootstrap.min.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/slick.min.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\slick.min.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/script.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\script.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.eot?v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.eot??v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.woff2?v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome.woff2
+Content Type: font/woff2
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.woff?v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome.woff
+Content Type: font/woff
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.ttf?v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome.ttf
+Content Type: font/ttf
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/line-awesome.svg?v=1.1.
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\line-awesome.svg
+Content Type: image/svg+xml
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.eot?
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/ajax-loader.gif
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\ajax-loader.gif
+Content Type: image/gif
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/fonts/slick.eot
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\fonts\slick.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/fonts/slick.eot?
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\fonts\slick-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/fonts/slick.woff
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\fonts\slick.woff
+Content Type: font/woff
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/fonts/slick.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\fonts\slick.ttf
+Content Type: font/ttf
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/lib/slick/fonts/slick.svg
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\lib\slick\fonts\slick.svg
+Content Type: image/svg+xml
+
+Uri: https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\css.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/jquery.mCustomScrollbar.min.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\jquery.mCustomScrollbar.min.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user-pic.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user-pic.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/cp.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\cp.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/envelop.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\envelop.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/user3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\user3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/bg-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\bg-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/bg-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\bg-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/bg-img3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\bg-img3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/bg-img4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\bg-img4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/wd-logo.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\wd-logo.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/usr-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\usr-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/us-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\us-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/usr-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\usr-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/chat.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\chat.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/usy1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\usy1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/smley.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\smley.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/usy2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\usy2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/usy3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\usy3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/jquery.mCustomScrollbar.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\jquery.mCustomScrollbar.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/scrollbar.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\scrollbar.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/flatpickr.min.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\flatpickr.min.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon7.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon7.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon8.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon8.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon9.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon9.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon10.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon10.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon11.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon11.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/cmp-icon12.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\cmp-icon12.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/flatpickr.min.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\flatpickr.min.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/css/jquery.range.css
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\css\jquery.range.css
+Content Type: text/css
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/js/jquery.range-min.js
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\js\jquery.range-min.js
+Content Type: application/javascript
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon7.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon7.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon8.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon8.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon9.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon9.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon10.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon10.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon11.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon11.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/pf-icon12.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\pf-icon12.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/ic6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\ic6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/lt-icon.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\lt-icon.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/dlr-icon.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\dlr-icon.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/cc-icon1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\cc-icon1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/cc-icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\cc-icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/cc-icon3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\cc-icon3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/cc-icon4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\cc-icon4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img6.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/m-img7.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\m-img7.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/mt-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\mt-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/mt-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\mt-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/mt-img3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\mt-img3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/up-btn.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\up-btn.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/pro-icon1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\pro-icon1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/pro-icon2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\pro-icon2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/pro-icon3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\pro-icon3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/pro-icon4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\pro-icon4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img1.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img1.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img2.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img2.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img3.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img3.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img4.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img4.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img5.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img5.png
+Content Type: image/png
+
+Uri: http://gambolthemes.net/workwise_demo/HTML/images/resources/r-img6.png
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\workwise_demo\HTML\images\resources\r-img6.png
+Content Type: image/png
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18E.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18E.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDc.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18E.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18E.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZclSds18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklyds18E.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklyds18E.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf
+File Name: C:\Users\Halil DİLAVER\Desktop\s\gambolthemes.net\s\sourcesanspro\v11\6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf
+Content Type: font/ttf
+

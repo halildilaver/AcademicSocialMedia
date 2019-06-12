@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Messages index{% endblock %}
+
+{% block body %}
+    <section class="messages-page">
+        <div class="container">
+            <div class="messages-sec">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 no-pdd">
+                        <div class="msgs-list">
+                            <div class="msg-title">
+                                <h3>Messages</h3>
+                                <ul>
+                                    <li><a href="#" title=""><i class="fa fa-cog"></i></a></li>
+                                    <li><a href="#" title=""><i class="fa fa-ellipsis-v"></i></a></li>
+                                </ul>
+                            </div><!--msg-title end-->
+                            <div class="messages-list">
+                                <ul>
+                                    {% for user in muser %}
+                                        <li>
+                                            <a href="{{ path('messages_user', {'id': user[0].id}) }}"><div class="usr-msg-details">
+                                                <div class="usr-ms-img">
+                                                    <img src="{{ asset('uploads') }}/{{ user[0].image }}" alt="">
+                                                </div>
+                                                <div class="usr-mg-info">
+                                                    <h3>{{ user[0].name }}</h3>
+                                                    <p></p>
+                                                    <!--<p>Vestibulum ac diam..</p>-->
+                                                </div><!--usr-mg-info end-->
+                                                <span class="posted_time">1:55 PM</span>
+                                            </div><!--usr-msg-details end--></a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div><!--messages-list end-->
+                        </div><!--msgs-list end-->
+                    </div>
+                    <div class="col-lg-8 col-md-12 pd-right-none pd-left-none">
+                        <div class="main-conversation-box">
+                            <div class="message-bar-head">
+                                <div class="usr-msg-details">
+                                    <div class="usr-ms-img">
+                                        <img src="images\resources\m-img1.png" alt="">
+                                    </div>
+                                    {% for user in muser %}
+                                        {% if(user[0].id == receiverid) %}
+                                    <div class="usr-mg-info">
+                                        <h3>{{ user[0].name }}</h3>
+                                    </div><!--usr-mg-info end-->
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <a href="#" title=""><i class="fa fa-ellipsis-v"></i></a>
+                            </div><!--message-bar-head end-->
+                            <div class="messages-line">
+                                <div class="main-message-box">
+                                    <div class="messg-usr-img">
+                                        <img src="images\resources\m-img1.png" alt="">
+                                    </div><!--messg-usr-img end-->
+                                    <div class="message-dt">
+                                        <div class="message-inner-dt img-bx">
+                                            <img src="images\resources\mt-img1.png" alt="">
+                                            <img src="images\resources\mt-img2.png" alt="">
+                                            <img src="images\resources\mt-img3.png" alt="">
+                                        </div><!--message-inner-dt end-->
+                                        <span>Sat, Aug 23, 1:08 PM</span>
+                                    </div><!--message-dt end-->
+                                </div><!--main-message-box end-->
+                                {% for m in message %}
+                                <div class="main-message-box ta-right">
+                                    <div class="message-dt">
+                                        <div class="message-inner-dt">
+                                            {{ m.sendername }}<p>{{ m.message }}</p>
+                                        </div><!--message-inner-dt end-->
+                                        <span>Sat, Aug 23, 1:08 PM</span>
+                                    </div><!--message-dt end-->
+                                    <div class="messg-usr-img">
+                                        <img src="images\resources\m-img2.png" alt="">
+                                    </div><!--messg-usr-img end-->
+                                </div><!--main-message-box end-->
+                                {% endfor %}
+
+                            </div><!--messages-line end-->
+                            <div class="message-send-area">
+                                <form action="{{ path('messages_new') }}" method="post">
+                                    <div class="mf-field">
+                                        <input type="text" name="messages[message]" placeholder="Type a message here">
+                                        <input type="hidden" name="messages[senderid]" value="{{ app.user.id }}">
+                                        <input type="hidden" name="messages[sendername]" value="{{ app.user.name }}" >
+                                        <input type="hidden" name="messages[receiverid]" value="{{ receiverid }}">
+                                        <button type="submit">Send</button>
+                                    </div>
+                                </form>
+                            </div><!--message-send-area end-->
+                        </div><!--main-conversation-box end-->
+                    </div>
+                </div>
+            </div><!--messages-sec end-->
+        </div>
+    </section><!--messages-page end-->
+{% endblock %}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>{% block title %}Kayıt Ol{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\animate.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\menus.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\line-awesome.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\line-awesome-font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\lib\slick\slick.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\lib\slick\slick-theme.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('loginpage') }}\style.css">
+<link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {box-sizing: border-box}
+
+    /* Style tab links */
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 33.3333333333%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 20px 20px 20px 20px;
+        height: 100%;
+    }
+
+</style>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    .form-style-8{
+        font-family: 'Open Sans Condensed', arial, sans;
+        width: 500px;
+        padding: 30px;
+        background: #FFFFFF;
+        margin: 50px auto;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+    }
+    .form-style-8 h2{
+        background: #4D4D4D;
+        text-transform: uppercase;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: #797979;
+        font-size: 18px;
+        font-weight: 100;
+        padding: 20px;
+        margin: -30px -30px 30px -30px;
+    }
+    .form-style-8 input[type="text"],
+    .form-style-8 input[type="date"],
+    .form-style-8 input[type="datetime"],
+    .form-style-8 input[type="email"],
+    .form-style-8 input[type="number"],
+    .form-style-8 input[type="search"],
+    .form-style-8 input[type="time"],
+    .form-style-8 input[type="url"],
+    .form-style-8 input[type="password"],
+    .form-style-8 textarea,
+    .form-style-8 select
+    {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        background: transparent;
+        margin-bottom: 10px;
+        font: 16px Arial, Helvetica, sans-serif;
+        height: 45px;
+    }
+    .form-style-8 textarea{
+        resize:none;
+        overflow: hidden;
+    }
+    .form-style-8 input[type="button"],
+    .form-style-8 input[type="submit"]{
+        -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+        -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+        box-shadow: inset 0px 1px 0px 0px #45D6D6;
+        background-color: #2CBBBB;
+        border: 1px solid #27A0A0;
+        display: inline-block;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 14px;
+        padding: 8px 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .form-style-8 input[type="button"]:hover,
+    .form-style-8 input[type="submit"]:hover {
+        background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+        background-color:#34CACA;
+    }
+</style>
+<body>
+    <section class="profile-account-setting">
+        <div class="container">
+            <div class="account-tabs-setting">
+                <div class="row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-acc" role="tabpanel" aria-labelledby="nav-acc-tab">
+                                <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Kişisel Bilgiler</button>
+                                <button class="tablink" onclick="openPage('News', this, 'green')" >Genel Bilgiler</button>
+                                <button class="tablink" onclick="openPage('Contact', this, 'blue')">Akademik Bilgiler</button>
+                                <div class="acc-setting">
+                                    <form action="#" method="post" class="form-horizontal">
+                                        <div id="Home" class="tabcontent">
+
+                                            <div class="cp-field">
+                                                <h5>Name</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[name]" value="{{ user.name }}" class="span11" placeholder="Name">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Email</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[email]" value="{{ user.email }}"class="span11" placeholder="E-Mail">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Email 2</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[email2]" value="{{ user.email2 }}"class="span11" placeholder="E-Mail-2">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="cp-field">
+                                                <h5>Password</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="password" name="user[password]" value="{{ user.password }}"class="span11" placeholder="Password">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Location</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[location]" value="{{ user.location }}"class="span11" placeholder="Location">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>School</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[school]" value="{{ user.school }}"class="span11" placeholder="School">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Department</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[department]" value="{{ user.department }}"class="span11" placeholder="Department">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Room No</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[roomno]" value="{{ user.roomno }}"class="span11" placeholder="Room No">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Website</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[website]" value="{{ user.website }}"class="span11" placeholder="Website">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Phone</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[phone]" value="{{ user.phone }}"class="span11" placeholder="Phone">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Fax</h5>
+                                                <div class="cpp-fiel">
+                                                    <input type="text" name="user[fax]" value="{{ user.fax }}"class="span11" placeholder="Fax">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="News" class="tabcontent">
+                                            <div class="cp-field">
+                                                <h5>Info</h5>
+                                                <textarea name="user[info]">{{ user.info }}</textarea>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Skills</h5>
+                                                <textarea name="user[skills]">{{ user.skills }}</textarea>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Workarea</h5>
+                                                <textarea name="user[workarea]">{{ user.workarea }}</textarea>
+                                            </div>
+                                            <div class="cp-field">
+                                                <h5>Title and Tasks</h5>
+                                                <textarea name="user[titleandtasks]">{{ user.titleandtasks }}</textarea>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div id="Contact" class="tabcontent">
+                                            <div class="notbar">
+                                                <div class="notbar">
+                                                    <h3 style="color: black; font-size: 20px;">Eğitim Bilgileri</h3>
+                                                </div>
+                                                <div class="cp-field">
+                                                    <h5>Lisans</h5>
+                                                    <div class="cpp-fiel">
+                                                        <input type="text" name="user[edulis]" value="{{ user.edulis }}"class="span11" placeholder="Lisans Öğretimi">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cp-field">
+                                                    <h5>Yüksek Lisans</h5>
+                                                    <div class="cpp-fiel">
+                                                        <input type="text" name="user[edumaster]" value="{{ user.edumaster }}"class="span11" placeholder="Yüksek Lisans Öğretimi">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cp-field">
+                                                    <h5>Doktora</h5>
+                                                    <div class="cpp-fiel">
+                                                        <input type="text" name="user[edudoc]" value="{{ user.edudoc }}"class="span11" placeholder="Doktora Öğretimi">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notbar">
+                                                <div class="notbar">
+                                                    <h3 style="color: black; font-size: 20px;">Tez Bilgileri</h3>
+                                                </div>
+                                                <div class="cp-field">
+                                                    <h5>Yüksek Lisans</h5>
+                                                    <div class="cpp-fiel">
+                                                        <input type="text" name="user[thesismaster]" value="{{ user.thesismaster }}"class="span11" placeholder="Yüksek Lisans Tezi">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cp-field">
+                                                    <h5>Doktora</h5>
+                                                    <div class="cpp-fiel">
+                                                        <input type="text" name="user[thesisdoc]" value="{{ user.thesisdoc }}"class="span11" placeholder="Doktora Tezi">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="save-stngs pd3">
+                                            <input type="hidden" name="token" value="{{ csrf_token('user-form') }}">
+                                            <input type="hidden" name="user[roles]" value="ROLE_USER">
+                                            <button type="submit" class="btn btn-success">Kaydet</button>
+                                        </div><!--save-stngs end-->
+                                    </form>
+                                </div>
+
+
+                                <script>
+                                    function openPage(pageName,elmnt,color) {
+                                        var i, tabcontent, tablinks;
+                                        tabcontent = document.getElementsByClassName("tabcontent");
+                                        for (i = 0; i < tabcontent.length; i++) {
+                                            tabcontent[i].style.display = "none";
+                                        }
+                                        tablinks = document.getElementsByClassName("tablink");
+                                        for (i = 0; i < tablinks.length; i++) {
+                                            tablinks[i].style.backgroundColor = "";
+                                        }
+                                        document.getElementById(pageName).style.display = "block";
+                                        elmnt.style.backgroundColor = color;
+                                    }
+
+                                    // Get the element with id="defaultOpen" and click on it
+                                    document.getElementById("defaultOpen").click();
+                                </script>
+
+
+
+                            </div><!--acc-setting end-->
+                            </form>
+                        </div><!--acc-setting end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

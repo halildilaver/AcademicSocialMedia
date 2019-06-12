@@ -1,0 +1,309 @@
+
+<div class="col-lg-9 col-md-8 no-pd">
+    {% if app.user.image == null %}
+        <div class="alert alert-info">
+            <div class="container">
+                <b>Profil fotoğrafı ve diğer kullanıcı bilgilerinizi eklemek için ayarlar sekmesine gidebilirsiniz </b>
+            </div>
+        </div>
+    {% endif %}
+    {% if research == null %}
+        <div class="alert alert-success">
+            <div class="container">
+                <b>Anasayfan bomboş, Hemen önerilen kullanıcılardan birkaç kişi takip etmeye başlayabilirsin.</b>
+            </div>
+        </div>
+    {% endif %}
+    <div class="main-ws-sec">
+        <div class="post-topbar">
+            <div class="user-picy">
+                <img src="{{ asset('uploads') }}/{{ app.user.image }}" alt="">
+            </div>
+            <div class="post-st">
+                <ul>
+                    <li><a class="post_project" href="#" title="">Proje Yayınla</a></li>
+                </ul>
+            </div><!--post-st end-->
+        </div><!--post-topbar end-->
+        <div class="posts-section">
+            {% for as in research %}
+                {% for rs in as %}
+                    <div class="posty">
+                        <div class="post-bar no-margin">
+                            <div class="post_topbar">
+                                <div class="usy-dt">
+                                    <a href="/profile/{{ rs.userid }}" title="">
+                                        <img src="{{ asset('uploads') }}/{{ rs.userimage }}" alt="" height="40"></a>
+                                    <div class="usy-name">
+                                        <h3>{{ rs.username }}</h3>
+                                        <span><img src="{{ asset('theme') }}\images\clock.png" alt="">{{ rs.addtime }}</span>
+                                    </div>
+                                </div>
+                                <div class="ed-opts">
+                                    <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                    <ul class="ed-options">
+                                        <li><a href="#" title="">Edit Post</a></li>
+                                        <li><a href="#" title="">Unsaved</a></li>
+                                        <li><a href="#" title="">Unbid</a></li>
+                                        <li><a href="#" title="">Close</a></li>
+                                        <li><a href="#" title="">Hide</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="epi-sec">
+                                <ul class="descp">
+                                    <li><img src="{{ asset('theme') }}\images\icon9.png" alt=""><span>{{ rs.userlocation }}</span></li>
+                                </ul>
+                                {% if(rs.recommendname) %}
+                                <ul class="bk-links">
+                                    <li><i class="la la-bookmark" style="width: 250px;font-size: 15px;">Recommended by {{ rs.recommendname }}</i></li>
+                                </ul>
+                                {% endif %}
+                            </div>
+                            <div class="job_descp">
+                                <a href="{{ path('research_show', {'id': rs.id}) }}"><h3>{{ rs.title }}</h3></a>
+                                <ul class="job-dt" style="width: 100%">
+                                    <li><object data="{{ asset('uploads') }}\{{ rs.upload }}" type="application/pdf" width="250%" height="400px">
+                                            <p>PDF Görüntülenemiyor. Lütfen dosyayı indirerek görüntüleyiniz.<a href="{{ asset('uploads') }}\{{ rs.upload }}">İndir</a></p>
+                                        </object></li>
+                                    <!--<li><iframe src="{{ asset('uploads') }}\{{ rs.upload }}" frameborder="0" height="400px" width="780px"></iframe></li>-->
+                                </ul>
+                                <p>{{ rs.abstract }}</p>
+                            </div>
+                            <div class="job-status-bar">
+                                <ul class="like-com">
+                                    <li>
+                                        <form action="{{ path('research_update', {'id': rs.id}) }}" method="post">
+                                            <input type="hidden" value="{{ rs.view }}" name="view">
+                                            <a><i class="la la-heart"></i> <input type="submit" style="border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: darkgrey;
+    padding: 0;" value="View"></a>
+                                         </form>
+                                    </li>
+                                    <li>
+                                        <form action="{{ path('research_new2') }}" method="post">
+                                            <input type="hidden" value="{{ rs.title }}" name="research[title]">
+                                            <input type="hidden" value="{{ rs.description }}" name="research[description]">
+                                            <input type="hidden" value="{{ rs.keywords }}" name="research[keywords]">
+                                            <input type="hidden" value="{{ rs.abstract }}" name="research[abstract]">
+                                            <input type="hidden" value="{{ app.user.id }}" name="research[userid]">
+                                            <input type="hidden" value="{{ rs.upload }}" name="research[upload]">
+                                            <input type="hidden" value="0" name="research[view]">
+                                            <input type="hidden" value="{{ rs.username }}" name="research[username]">
+                                            <input type="hidden" value="{{ rs.userimage }}" name="research[userimage]">
+                                            <input type="hidden" value="{{ rs.userlocation }}" name="research[userlocation]">
+                                            <input type="hidden" value="{{ app.user.name }}" name="research[recommendname]">
+                                            <input type="hidden" value="{{ rs.addtime }}" name="research[addtime]">
+                                            <a><i class="la la-heart"></i> <input type="submit" style="border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: darkgrey;
+    padding: 0;" value="Recommend"></a>
+                                        </form>
+                                    </li>
+                                    <li><a href="{{ path('research_show', {'id': rs.id}) }}" title="" class="com"><img src="{{ asset('theme') }}\images\com.png" alt=""> Ask a question? </a></li>
+
+                                </ul>
+                                <a><i class="la la-eye"></i>Views {{ rs.view }}</a>
+                            </div>
+                        </div><!--post-bar end-->
+                    </div><!--posty end-->
+                    <div class="process-comm">
+                    </div><!--process-comm end-->
+                {% else %}
+                {% endfor %}
+            {% endfor %}
+
+
+
+
+
+
+            <!--<div class="top-profiles">
+                <div class="pf-hd">
+                    <h3>Top Profiles</h3>
+                    <i class="la la-ellipsis-v"></i>
+                </div>
+                <div class="profiles-slider">
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user1.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user2.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user3.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user1.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user2.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                    <div class="user-profy">
+                        <img src="{{ asset('theme') }}\images\resources\user3.png" alt="">
+                        <h3>John Doe</h3>
+                        <span>Graphic Designer</span>
+                        <ul>
+                            <li><a href="#" title="" class="followw">Follow</a></li>
+                            <li><a href="#" title="" class="envlp"><img src="{{ asset('theme') }}\images\envelop.png" alt=""></a></li>
+                            <li><a href="#" title="" class="hire">hire</a></li>
+                        </ul>
+                        <a href="#" title="">View Profile</a>
+                    </div>
+                </div>
+            </div>top-profiles end
+            <div class="posty">
+                <div class="post-bar no-margin">
+                    <div class="post_topbar">
+                        <div class="usy-dt">
+                            <img src="{{ asset('theme') }}\images\resources\us-pc2.png" alt="">
+                            <div class="usy-name">
+                                <h3>Halil Dilaver</h3>
+                                <span><img src="{{ asset('theme') }}\images\clock.png" alt="">5 saat önce</span>
+                            </div>
+                        </div>
+                        <div class="ed-opts">
+                            <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                            <ul class="ed-options">
+                                <li><a href="#" title="">Düzenle</a></li>
+                                <li><a href="#" title="">Sil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="epi-sec">
+                        <ul class="descp">
+                            <li><img src="{{ asset('theme') }}\images\icon9.png" alt=""><span>Türkiye</span></li>
+                        </ul>
+                        <ul class="bk-links">
+                            <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                            <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="job_descp">
+                        <div class="job-status-bar">
+                            <img src="{{ asset('theme') }}\images\resources\instagram_1.jpg" height="300">
+                            <img src="{{ asset('theme') }}\images\resources\instagram_2.jpg" height="300">
+                            <img src="{{ asset('theme') }}\images\resources\instagram_3.jpg" height="300">
+                            <img src="{{ asset('theme') }}\images\resources\instagram_4.jpg" height="300">
+                        </div>
+
+
+
+                        <h3>Balarısı ve İşçi Arı Algoritması</h3>
+                        <ul class="skill-tags">
+                            <li><a href="#" title="">Algoritma</a></li>
+                            <li><a href="#" title="">Yazılım</a></li>
+                            <li><a href="#" title="">Makale</a></li>
+                        </ul>
+                        <ul class="job-dt" style="margin-left: 80%">
+                            <li><a href="#" title="">Görüntüle</a></li>
+                            <li><a href="#" title="">İndir</a></li>
+                        </ul>
+                    </div>
+                    <div class="job-status-bar">
+                        <ul class="like-com">
+                            <li>
+                                <a href="#"><i class="la la-heart"></i> Beğen</a>
+                                <img src="{{ asset('theme') }}\images\liked-img.png" alt="">
+                                <span>25</span>
+                            </li>
+                            <li><a href="#" title="" class="com"><img src="{{ asset('theme') }}\images\com.png" alt=""> Yorum 2</a></li>
+                        </ul>
+                    </div>
+                </div>--><!--post-bar end
+                <div class="comment-section">
+                    <div class="plus-ic">
+                        <i class="la la-plus"></i>
+                    </div>
+                    <div class="comment-sec">
+                        <ul>
+                            <li>
+                                <div class="comment-list">
+                                    <div class="bg-img">
+                                        <img src="{{ asset('theme') }}\images\resources\bg-img4.png" alt="">
+                                    </div>
+                                    <div class="comment">
+                                        <h3>Harun Urhan</h3>
+                                        <span><img src="{{ asset('theme') }}\images\clock.png" alt=""> 2 saat önce</span>
+                                        <p>Başarılı, tebrikler </p>
+                                    </div>
+                                </div><!--comment-list end
+                            </li>
+                            <li>
+                                <div class="comment-list">
+                                    <div class="bg-img">
+                                        <img src="{{ asset('theme') }}\images\resources\bg-img3.png" alt="">
+                                    </div>
+                                    <div class="comment">
+                                        <h3>Burhan Selçuk</h3>
+                                        <span><img src="{{ asset('theme') }}\images\clock.png" alt=""> 53 dakika önce</span>
+                                        <p>Beğendim.</p>
+                                    </div>
+                                </div><!--comment-list end
+                            </li>
+                        </ul>
+                    </div><!--comment-sec end
+                    <div class="post-comment">
+                        <div class="cm_img">
+                            <img src="{{ asset('theme') }}\images\resources\bg-img4.png" alt="">
+                        </div>
+                        <div class="comment_box">
+                            <form>
+                                <input type="text" placeholder="Yorumunuz...">
+                                <button type="submit">Gönder</button>
+                            </form>
+                        </div>
+                    </div><!--post-comment end
+                </div><!--comment-section end
+            </div><!--posty end-->
+            <div class="process-comm">
+                <a href="#" title=""><img src="{{ asset('theme') }}\images\process-icon.png" alt=""></a>
+            </div><!--process-comm end-->
+        </div><!--posts-section end-->
+    </div><!--main-ws-sec end-->
+</div>

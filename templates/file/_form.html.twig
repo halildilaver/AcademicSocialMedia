@@ -1,0 +1,15 @@
+<div class="post-project">
+    <h3>Add File</h3>
+    <div class="post-project-fields">
+<form action="{{ path('file_new', {'rid': rid}) }}" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-lg-12">
+    <input name="rid" value="{{ rid }}" type="hidden" readonly>
+        </div>
+        <div class="col-lg-12">
+            <input type="file" name="filename" id="fileToUpload"></div>
+        <div class="col-lg-12">
+            <input style="background-color: #e44d3a" type="submit" value="Upload File" name="submit"></div>
+    </div>
+</form>
+    </div></div>

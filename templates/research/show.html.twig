@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Research{% endblock %}
+
+{% block body %}
+<div class="posts-section">
+            <div class="posty">
+                <div class="post-bar no-margin">
+                    <div class="post_topbar">
+                        <div class="usy-dt">
+                            <a href="/profile/{{ rs.userid }}" title="">
+                                <img src="{{ asset('uploads') }}/{{ rs.userimage }}" alt="" height="40"></a>
+                            <div class="usy-name">
+                                <h3>{{ rs.username }}</h3>
+                                <span><img src="{{ asset('theme') }}\images\clock.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="ed-opts">
+                            <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                            <ul class="ed-options">
+                                <li><a href="#" title="">Edit Post</a></li>
+                                <li><a href="#" title="">Unsaved</a></li>
+                                <li><a href="#" title="">Unbid</a></li>
+                                <li><a href="#" title="">Close</a></li>
+                                <li><a href="#" title="">Hide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="epi-sec">
+                        <ul class="descp">
+                            <li><img src="{{ asset('theme') }}\images\icon9.png" alt=""><span>{{ rs.userlocation }}</span></li>
+                        </ul>
+                        <ul class="bk-links">
+                            <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                            <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="job_descp">
+                        <h3>{{ rs.title }}</h3>
+                        <ul class="job-dt" style="width: 100%">
+                            <li><iframe src="{{ asset('uploads') }}\{{ rs.upload }}" frameborder="0" height="400px" width="780px"></iframe></li>
+                        </ul>
+                        <p>{{ rs.abstract }}</p>
+                    </div>
+                    <div class="job-status-bar">
+                        <ul class="like-com">
+                            <li>
+                                <form action="{{ path('research_update', {'id': rs.id}) }}" method="post">
+                                    <input type="hidden" value="{{ rs.view }}" name="view">
+                                    <a><i class="la la-heart"><input type="submit" value="View"></i></a>
+                                </form>
+                            </li>
+                        </ul>
+                        <a><i class="la la-eye"></i>Views {{ rs.view }}</a>
+                    </div>
+                </div><!--post-bar end-->
+
+                <div class="comment-section">
+                    {% for qs in question %}
+                    <div class="comment-sec">
+                        <ul>
+                            <li>
+                                <div class="comment-list">
+                                    <div class="bg-img">
+                                        <img src="{{ asset('uploads') }}\{{ qs.askphoto }}" height="40px" alt="">
+                                    </div>
+                                    <div class="comment">
+                                        <h3>{{ qs.askname }}</h3>
+                                        <span><img src="{{ asset('theme') }}\images\clock.png" alt=""> 3 min ago</span>
+                                        <p>{{ qs.question }} </p>
+                                    </div>
+                                </div><!--comment-list end-->
+                                <ul>
+                                    <li>
+                                        <div class="comment-list">
+                                            <div class="bg-img">
+                                                <img src="{{ asset('uploads') }}\{{ qs.answerphoto }}" height="40px" alt="">
+                                            </div>
+                                            <div class="comment">
+                                                <h3>{{ qs.answername }}</h3>
+                                                <span><img src="{{ asset('theme') }}\images\clock.png" alt=""> 3 min ago</span>
+                                                <p>{{ qs.answer }} </p>
+                                            </div>
+                                        </div><!--comment-list end-->
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--comment-sec end-->
+
+                    {% endfor %}
+                    <div class="post-comment">
+                        <div class="cm_img">
+                            <img src="{{ asset('uploads') }}/{{ app.user.image }}" height="40px" alt="">
+                        </div>
+                        <div class="comment_box">
+                            <form action="{{ path('questions_new') }}" method="post">
+                                <input type="text" name="questions[question]" placeholder="Ask a question?">
+                                <input type="hidden" name="questions[askphoto]" value="{{ app.user.image }}">
+                                <input type="hidden" name="questions[askname]" value="{{ app.user.name }}" >
+                                <input type="hidden" name="questions[status]" value="New" >
+                                <input type="hidden" name="questions[rid]" value="{{ rs.id }}">
+                                <input type="hidden" name="questions[ruid]" value="{{ rs.userid }}">
+                                <input type="hidden" name="questions[rname]" value="{{ rs.title }}">
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div><!--post-comment end-->
+                </div><!--comment-section end-->
+            </div><!--posty end-->
+            <div class="process-comm">
+            </div><!--process-comm end-->
+</div>
+{% endblock %}

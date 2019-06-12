@@ -1,0 +1,689 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\animate.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\menus.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\line-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\lib\slick\slick.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\lib\slick\slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\style.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme') }}\css\responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="JavaScript" type="text/javascript">
+        function openWin( windowURL, windowName, windowFeatures) {
+            window.open( windowURL,windowName,windowFeatures);
+        }
+    </script>
+    <style>
+        * {box-sizing: border-box}
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 33.3333333333%;
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 20px 20px 20px 20px;
+            height: 100%;
+        }
+
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        .form-style-8{
+            font-family: 'Open Sans Condensed', arial, sans;
+            width: 500px;
+            padding: 30px;
+            background: #FFFFFF;
+            margin: 50px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+        }
+        .form-style-8 h2{
+            background: #4D4D4D;
+            text-transform: uppercase;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #797979;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 20px;
+            margin: -30px -30px 30px -30px;
+        }
+        .form-style-8 input[type="text"],
+        .form-style-8 input[type="date"],
+        .form-style-8 input[type="datetime"],
+        .form-style-8 input[type="email"],
+        .form-style-8 input[type="number"],
+        .form-style-8 input[type="search"],
+        .form-style-8 input[type="time"],
+        .form-style-8 input[type="url"],
+        .form-style-8 input[type="password"],
+        .form-style-8 textarea,
+        .form-style-8 select
+        {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 10px;
+            font: 16px Arial, Helvetica, sans-serif;
+            height: 45px;
+        }
+        .form-style-8 textarea{
+            resize:none;
+            overflow: hidden;
+        }
+        .form-style-8 input[type="button"],
+        .form-style-8 input[type="submit"]{
+            -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            background-color: #2CBBBB;
+            border: 1px solid #27A0A0;
+            display: inline-block;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 14px;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .form-style-8 input[type="button"]:hover,
+        .form-style-8 input[type="submit"]:hover {
+            background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+            background-color:#34CACA;
+        }
+    </style>
+    <style type="text/css">
+        .mainscene{
+            font-family: 'Open Sans Condensed', arial, sans;
+            width: 80%;
+            position: relative;
+            height: 800px;
+            padding: 30px;
+            background: #FFFFFF;
+            margin: 70px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+        }
+        .mainscene div{
+            position: relative;
+            margin: 10% 40%;
+
+        }
+        .mainscene h2{
+            background: #4D4D4D;
+            text-transform: uppercase;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #797979;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 20px;
+            margin: -30px -30px 30px -30px;
+        }
+        .mainscene  input[type="button"]:hover,
+        .mainscene  input[type="submit"]:hover {
+            background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+            background-color:#34CACA;
+
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('navbar') }}/css/component1.css" />
+    <script src="{{ asset('navbar') }}/js/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+
+
+<body>
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+
+
+<div class="wrapper">
+
+
+
+    <header>
+        <div class="container">
+            <div class="header-data">
+                <!--<div class="logo">
+                    <a href="/home" title=""><img src="{{ asset('theme') }}\images\logo.png" alt=""></a>
+                </div><!--logo end-->
+                <div class="search-bar">
+                    <form action="{{ path('search') }}" method="post">
+                        <input type="text" name="search" placeholder="Ara...">
+                        <button type="submit"><i class="la la-search"></i></button>
+                    </form>
+                </div><!--search-bar end-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/" title="">
+                                <span><img src="{{ asset('theme') }}\images\icon1.png" alt=""></span>
+                                Anasayfa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/questions" title="">
+                                <span><img src="{{ asset('theme') }}\images\icon2.png" alt=""></span>
+                                Sorular
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/research" title="">
+                                <span><img src="{{ asset('theme') }}\images\icon3.png" alt=""></span>
+                                Projeler
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/messages" title="">
+                                <span style="color: white; font-size: 15px;"><img src="{{ asset('theme') }}\images\icon6.png" alt=""></span>
+                                Mesajlar
+                            </a>
+                            <div class="notification-box msg">
+                                <div class="nott-list">
+                                    <div class="notfication-details">
+                                        <div class="notification-info">
+                                            <h3>Yeni Mesajınız Yok.</h3>
+                                        </div>
+                                    </div>
+                                    <!--<div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img1.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="messages.htm" title="">Jassica William</a> </h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img2.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="messages.htm" title="">Jassica William</a></h3>
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img3.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="messages.htm" title="">Jassica William</a></h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>-->
+                                    <div class="view-all-nots">
+                                        <a href="#" title="">Tüm Mesajları Görüntüle</a>
+                                    </div>
+                                </div><!--nott-list end-->
+                            </div><!--notification-box end-->
+                        </li>
+                        <li>
+                            {% if(app.user.notification==0) %}
+                                <a href="#" title="" class="not-box-open">
+                                    <span style="color: white; font-size: 15px;"><img src="{{ asset('theme') }}\images\icon7.png" alt=""></span>
+                                    Bildirimler
+                                </a>
+                            {% else %}
+                                <a href="#" title="" class="not-box-open">
+                                    <span style="color: white; font-size: 15px;"><img src="{{ asset('theme') }}\images\icon7.png" alt="">{{ app.user.notification }}</span>
+                                    Bildirimler
+                                </a>
+                            {% endif %}
+
+                            <div class="notification-box">
+                                <div class="nott-list">
+                                    <div class="notfication-details">
+                                        <div class="notification-info">
+                                            {% if(app.user.notification==0) %}
+                                            <h3>Yeni bir bildirim bulunamadı.</h3>
+                                            {% else %}
+                                                <a href="/questions"> <h3>{{ app.user.notification }} Yeni sorunuz var..</h3></a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!--<div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img1.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img2.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img3.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="notfication-details">
+                                        <div class="noty-user-img">
+                                            <img src="{{ asset('theme') }}\images\resources\ny-img2.png" alt="">
+                                        </div>
+                                        <div class="notification-info">
+                                            <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
+                                            <span>2 min ago</span>
+                                        </div>
+                                    </div>-->
+                                    <!--<div class="view-all-nots">
+                                        <a href="#" title="">Tüm Bildirimleri Görüntüle</a>
+                                    </div>
+                                </div><!--nott-list end-->
+                            </div><!--notification-box end-->
+                        </li>
+                        <li>
+                            <a href="/profile/{{ app.user.id }}" title="">
+                                <span><img src="{{ asset('theme') }}\images\icon4.png" alt=""></span>
+                                Profil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/userpanel" title="">
+                                <span><img src="{{ asset('theme') }}\images\setting.png" alt="" height="20px" style="margin-bottom: 10px"></span>
+                                Ayarlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/logout" title="">
+                                <span><img src="{{ asset('theme') }}\images\icon9.png" alt=""></span>
+                                Çıkış
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav><!--nav end-->
+                <div class="menu-btn">
+                    <div class="component">
+                        <!-- Start Nav Structure -->
+                        <button class="cn-button" id="cn-button">+</button>
+                        <div class="cn-wrapper" id="cn-wrapper">
+                            <ul>
+                                <li><a href="/messages"><span class="icon-envelope-alt"></span></a></li>
+                                <li><a href="/questions"><span class="icon-question-sign"></span></a></li>
+                                <li><a href="/"><span class="icon-home"></span></a></li>
+                                <li><a href="/profile/{{ app.user.id }}"><span class="icon-user"></span></a></li>
+                                <li><a href="/userpanel"><span class="icon-cog"></span></a></li>
+                            </ul>
+                        </div>
+                        <div id="cn-overlay" class="cn-overlay"></div>
+                        <!-- End Nav Structure -->
+                    </div>
+                </div>
+                <!--<div class="user-account">
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <div class="user-info">
+                            <img src="{{ asset('theme') }}\images\resources\user.png" alt="">
+                            <i class="la la-sort-down"></i>
+                        </div>
+                        <div class="user-account-settingss">
+                            <h3>Ayarlar</h3>
+                            <ul class="us-links">
+                                <li><a href="/myprofile" title="">Profil</a></li>
+                                <li><a href="/userpanel" title="">Hesap Ayarları</a></li>
+                            </ul>
+                            <h3 class="tc"><a href="/logout" title="">Çıkış</a></h3>
+                        </div><!--user-account-settingss end-->
+                    {% else %}
+                <!--<div class="user-info">
+                            <div class="comment_box">
+                                <form action="/login">
+                                    <button type="submit" style="background-color: #53d690; margin-left:0px; height: 30px; width: 90px;">Giriş Yap</button>
+                                </form>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div><!--header-data end-->
+            </div>
+        </div>
+    </header><!--header end-->
+
+
+    <main>
+        <div class="main-section">
+            <div class="container">
+                <div class="main-section-data">
+                    <div class="row">
+                        {% block body %} {% endblock %}
+                        <!--LEFTBAR-->{% block leftbar %} {% endblock %}
+                        <!--CONTENT-->{% block content %} {% endblock %}
+                    </div>
+                </div><!-- main-section-data end-->
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div class="post-popup pst-pj">
+        <div class="post-project">
+            <h3>Yeni Proje Yayınla</h3>
+            <div class="post-project-fields">
+                <div class="sagIcerikBolumu">
+                    <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngIf: !IsMobileDevice --><div class="hesabimBolumuTutucu ng-scope" ng-if="!IsMobileDevice">
+                            <div class="hesabimAnasayfa">
+                                <div class="hesabimAnasayfaMenuler">
+                                    <ul>
+                                        <li ng-show="DestekTalepAktif" id="liAnasayfaDestekTalep"><a href="/research/new"><i class="fa fa-book" aria-hidden="true"></i> <span class="ng-binding">Yeni Döküman</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end ngIf: !IsMobileDevice -->
+                    </div>
+                </div>
+            </div><!--post-project-fields end-->
+            <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+        </div><!--post-project end-->
+    </div><!--post-project-popup end-->
+
+    <div class="post-popup job_post">
+        <div class="post-project">
+            <h3>Post a job</h3>
+            <div class="post-project-fields">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" name="title" placeholder="Title">
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inp-field">
+                                <select>
+                                    <option>Category</option>
+                                    <option>Category 1</option>
+                                    <option>Category 2</option>
+                                    <option>Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" name="skills" placeholder="Skills">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="price-br">
+                                <input type="text" name="price1" placeholder="Price">
+                                <i class="la la-dollar"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inp-field">
+                                <select>
+                                    <option>Full Time</option>
+                                    <option>Half time</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea name="description" placeholder="Description"></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <ul>
+                                <li><button class="active" type="submit" value="post">Post</button></li>
+                                <li><a href="#" title="">Cancel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div><!--post-project-fields end-->
+            <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+        </div><!--post-project end-->
+    </div><!--post-project-popup end-->
+
+
+
+    <!--<div class="chatbox-list">
+        <div class="chatbox">
+            <div class="chat-mg">
+                <a href="#" title=""><img src="{{ asset('theme') }}\images\resources\usr-img1.png" alt=""></a>
+                <span>2</span>
+            </div>
+            <div class="conversation-box">
+                <div class="con-title mg-3">
+                    <div class="chat-user-info">
+                        <img src="{{ asset('theme') }}\images\resources\us-img1.png" alt="">
+                        <h3>John Doe <span class="status-info"></span></h3>
+                    </div>
+                    <div class="st-icons">
+                        <a href="#" title=""><i class="la la-cog"></i></a>
+                        <a href="#" title="" class="close-chat"><i class="la la-minus-square"></i></a>
+                        <a href="#" title="" class="close-chat"><i class="la la-close"></i></a>
+                    </div>
+                </div>
+                <div class="chat-hist mCustomScrollbar" data-mcs-theme="dark">
+                    <div class="chat-msg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+                        <span>Sat, Aug 23, 1:10 PM</span>
+                    </div>
+                    <div class="date-nd">
+                        <span>Sunday, August 24</span>
+                    </div>
+                    <div class="chat-msg st2">
+                        <p>Cras ultricies ligula.</p>
+                        <span>5 minutes ago</span>
+                    </div>
+                    <div class="chat-msg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+                        <span>Sat, Aug 23, 1:10 PM</span>
+                    </div>
+                </div><
+                <div class="typing-msg">
+                    <form>
+                        <textarea placeholder="Type a message here"></textarea>
+                        <button type="submit"><i class="fa fa-send"></i></button>
+                    </form>
+                    <ul class="ft-options">
+                        <li><a href="#" title=""><i class="la la-smile-o"></i></a></li>
+                        <li><a href="#" title=""><i class="la la-camera"></i></a></li>
+                        <li><a href="#" title=""><i class="fa fa-paperclip"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="chat-mg">
+                <a href="#" title=""><img src="{{ asset('theme') }}\images\resources\usr-img2.png" alt=""></a>
+            </div>
+            <div class="conversation-box">
+                <div class="con-title mg-3">
+                    <div class="chat-user-info">
+                        <img src="{{ asset('theme') }}\images\resources\us-img1.png" alt="">
+                        <h3>John Doe <span class="status-info"></span></h3>
+                    </div>
+                    <div class="st-icons">
+                        <a href="#" title=""><i class="la la-cog"></i></a>
+                        <a href="#" title="" class="close-chat"><i class="la la-minus-square"></i></a>
+                        <a href="#" title="" class="close-chat"><i class="la la-close"></i></a>
+                    </div>
+                </div>
+                <div class="chat-hist mCustomScrollbar" data-mcs-theme="dark">
+                    <div class="chat-msg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+                        <span>Sat, Aug 23, 1:10 PM</span>
+                    </div>
+                    <div class="date-nd">
+                        <span>Sunday, August 24</span>
+                    </div>
+                    <div class="chat-msg st2">
+                        <p>Cras ultricies ligula.</p>
+                        <span>5 minutes ago</span>
+                    </div>
+                    <div class="chat-msg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+                        <span>Sat, Aug 23, 1:10 PM</span>
+                    </div>
+                </div>
+                <div class="typing-msg">
+                    <form>
+                        <textarea placeholder="Type a message here"></textarea>
+                        <button type="submit"><i class="fa fa-send"></i></button>
+                    </form>
+                    <ul class="ft-options">
+                        <li><a href="#" title=""><i class="la la-smile-o"></i></a></li>
+                        <li><a href="#" title=""><i class="la la-camera"></i></a></li>
+                        <li><a href="#" title=""><i class="fa fa-paperclip"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="chat-mg bx">
+                <a href="#" title=""><img src="{{ asset('theme') }}\images\chat.png" alt=""></a>
+                <span>2</span>
+            </div>
+            <div class="conversation-box">
+                <div class="con-title">
+                    <h3>Messages</h3>
+                    <a href="#" title="" class="close-chat"><i class="la la-minus-square"></i></a>
+                </div>
+                <div class="chat-list">
+                    <div class="conv-list active">
+                        <div class="usrr-pic">
+                            <img src="{{ asset('theme') }}\images\resources\usy1.png" alt="">
+                            <span class="active-status activee"></span>
+                        </div>
+                        <div class="usy-info">
+                            <h3>John Doe</h3>
+                            <span>Lorem ipsum dolor <img src="{{ asset('theme') }}\images\smley.png" alt=""></span>
+                        </div>
+                        <div class="ct-time">
+                            <span>1:55 PM</span>
+                        </div>
+                        <span class="msg-numbers">2</span>
+                    </div>
+                    <div class="conv-list">
+                        <div class="usrr-pic">
+                            <img src="{{ asset('theme') }}\images\resources\usy2.png" alt="">
+                        </div>
+                        <div class="usy-info">
+                            <h3>John Doe</h3>
+                            <span>Lorem ipsum dolor <img src="{{ asset('theme') }}\images\smley.png" alt=""></span>
+                        </div>
+                        <div class="ct-time">
+                            <span>11:39 PM</span>
+                        </div>
+                    </div>
+                    <div class="conv-list">
+                        <div class="usrr-pic">
+                            <img src="{{ asset('theme') }}\images\resources\usy3.png" alt="">
+                        </div>
+                        <div class="usy-info">
+                            <h3>John Doe</h3>
+                            <span>Lorem ipsum dolor <img src="{{ asset('theme') }}\images\smley.png" alt=""></span>
+                        </div>
+                        <div class="ct-time">
+                            <span>0.28 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>->>
+
+</div><!--theme-layout end-->
+
+
+
+    <script type="text/javascript" src="{{ asset('theme') }}\js\jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\js\popper.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\js\jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\lib\slick\slick.min.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\js\scrollbar.js"></script>
+    <script type="text/javascript" src="{{ asset('theme') }}\js\script.js"></script>
+    {% else %}
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <div class="header-data">
+                        <div class="logo">
+                            <a href="/" title=""><img src="{{ asset('theme') }}\images\logo.jpg" height="35px" style="margin-bottom: 5px" alt=""></a>
+                        </div>
+                    </div><!--header-data end-->
+                </div>
+            </header><!--header end-->
+            <div class="mainscene">
+                <div class="orta">
+                    <img src="{{ asset('theme') }}\images\logo.jpg" alt="" style="margin-left:16%;">
+                    <a href="/login" > <button class="btn btn-lg btn-primary" style="margin-bottom: 5%;background-color: #00b540; width: 300px" type="submit">
+                            GİRİŞ YAP
+                        </button></a>
+                    <a href="/newuser" > <button class="btn btn-lg btn-primary" style="margin-bottom: 5%; width: 300px;" type="submit">KAYIT OL
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+</div><!-- /container -->
+<script src="{{ asset('navbar') }}/js/polyfills.js"></script>
+<script src="{{ asset('navbar') }}/js/demo1.js"></script>
+<!-- For the demo ad only -->
+</body>
+</html>

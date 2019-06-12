@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+    <section class="companies-info">
+        <div class="container">
+            <div class="company-title">
+                <h3>All Users</h3>
+            </div><!--company-title end-->
+            <div class="companies-list">
+                <div class="row">
+                    {% for user in users %}
+                        {% if(user.id!=app.user.id) %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="company_profile_info">
+                            <div class="company-up-info">
+                                <img src="{{ asset('uploads') }}/{{ user.image }}" height="100px" alt="">
+                                <h3>{{ user.name }}</h3>
+                                <h4>{{ user.workarea }}</h4>
+                                <ul>
+                                    <li><a href="/profile/{{ user.id }}" title="" class="hire-us">View Profile</a></li>
+                                </ul>
+                            </div>
+                        </div><!--company_profile_info end-->
+                    </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div><!--companies-list end-->
+            <div class="process-comm">
+                <a href="#" title=""><img src="images\process-icon.png" alt=""></a>
+            </div>
+        </div>
+    </section><!--companies-info end-->
+{% endblock %}

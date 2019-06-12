@@ -1,0 +1,10 @@
+<form method="post" action="{{ path('follow_delete', {'id':  follower[0].id }) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ follower[0].id) }}">
+    <ul class="flw-hr">
+        <li><button type="submit" class="flwd"><i class="la la-plus"></i>Unfollow</button></li>
+        <li><div class="message-btn">
+                <a href="#" title=""><i class="fa fa-envelope"></i> Message</a>
+            </div></li>
+    </ul>
+</form>

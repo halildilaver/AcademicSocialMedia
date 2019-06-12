@@ -1,0 +1,51 @@
+<div class="col-lg-3 col-md-4 pd-left-none no-pd">
+    <div class="main-left-sidebar no-margin">
+        <div class="user-data full-width">
+            <div class="user-profile">
+                <div class="username-dt">
+                    <div class="usr-pic">
+                        <img src="{{ asset('uploads') }}/{{ app.user.image }}" alt="">
+                    </div>
+                </div><!--username-dt end-->
+                <div class="user-specs">
+                    <h3>{{ app.user.name }}</h3>
+                    <span>{{ app.user.department }}</span>
+                </div>
+            </div><!--user-profile end-->
+            <ul class="user-fw-status">
+                <li>
+                    <h4>Takip</h4>
+                    <span>{{ followd }}</span>
+                </li>
+                <li>
+                    <h4>Takipçi</h4>
+                    <span>{{ followc }}</span>
+                </li>
+                <!--<li>
+                    <a href="/myprofile" title="">Profili Görüntüle</a>
+                </li>-->
+            </ul>
+        </div><!--user-data end-->
+        <div class="suggestions full-width">
+            <div class="sd-title">
+                <h3>Önerilenler</h3>
+            </div><!--sd-title end-->
+            <div class="suggestions-list">
+                {% for rs in suggestion %}
+                <div class="suggestion-usd">
+                    <a href="/profile/{{ rs.id }}" title="">
+                    <img src="{{ asset('uploads') }}/{{ rs.image }}" height="30px" alt="">
+                    <div class="sgt-text">
+                        <h4>{{ rs.name }}</h4>
+                        <span>{{ rs.workarea }}</span>
+                    </div>
+                    </a>
+                </div>
+                {% endfor %}
+                <div class="view-more">
+                    <a href="/profile" title="">Daha Fazla Görüntüle</a>
+                </div>
+            </div><!--suggestions-list end-->
+        </div><!--suggestions end-->
+    </div><!--main-left-sidebar end-->
+</div>

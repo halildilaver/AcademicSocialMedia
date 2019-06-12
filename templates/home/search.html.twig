@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Search Result{% endblock %}
+
+{% block body %}
+    <section class="companies-info">
+        <div class="container">
+            <div class="company-title">
+                <h3>User Result</h3>
+            </div><!--company-title end-->
+            <div class="companies-list">
+                <div class="row">
+                    {% for user in search %}
+                        {% if(user.id!=app.user.id) %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="company_profile_info">
+                            <div class="company-up-info">
+                                <img src="{{ asset('uploads') }}/{{ user.image }}" height="100px" alt="">
+                                <h3>{{ user.name }}</h3>
+                                <h4>{{ user.workarea }}</h4>
+                                <ul>
+                                    <li><a href="/profile/{{ user.id }}" title="" class="hire-us">View Profile</a></li>
+                                </ul>
+                            </div>
+                        </div><!--company_profile_info end-->
+                    </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div><!--companies-list end-->
+            <div class="process-comm">
+                <a href="#" title=""><img src="images\process-icon.png" alt=""></a>
+            </div>
+        </div>
+    </section><!--companies-info end-->
+
+    <section class="companies-info">
+        <div class="container">
+            <div class="company-title">
+                <h3>Research Result</h3>
+            </div><!--company-title end-->
+            <div class="companies-list">
+                <div class="row">
+                    {% for research in searchre %}
+                            <div class="col-lg-12 col-md-4 col-sm-6 col-12">
+                                <div class="company_profile_info">
+                                    <div class="company-up-info">
+                                        <object data="{{ asset('uploads') }}\{{ research.upload }}" type="application/pdf" width="90%" height="400px">
+                                            <p>PDF Görüntülenemiyor. Lütfen dosyayı indirerek görüntüleyiniz.<a href="{{ asset('uploads') }}\{{ research.upload }}">İndir</a></p>
+                                        </object>
+                                        <h3>{{ research.title }}</h3>
+                                        <h4>{{ research.abstract }}</h4>
+                                        <ul>
+                                            <li><a href="/research/{{ research.id }}" title="" class="hire-us">View Research</a></li>
+                                            <li>
+                                                <form action="{{ path('research_update', {'id': research.id}) }}" method="post">
+                                                    <input type="hidden" value="{{ research.view }}" name="view">
+                                                    <a title="" class="follow"><input type="submit" style="border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;" value="View"></a>
+                                                </form></li>
+                                            <li><a class="message-us"><i class="la la-eye"></i>Views {{ research.view }}</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!--company_profile_info end-->
+                    {% endfor %}
+                </div>
+            </div><!--companies-list end-->
+            <div class="process-comm">
+                <a href="#" title=""><img src="images\process-icon.png" alt=""></a>
+            </div>
+        </div>
+    </section><!--companies-info end-->
+{% endblock %}
